@@ -15,5 +15,6 @@ jobs:
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
+          key: ${{ secrets.HOST_SSH_KEY }}
           source: "./script.sh"
           target: "~/script.sh"
