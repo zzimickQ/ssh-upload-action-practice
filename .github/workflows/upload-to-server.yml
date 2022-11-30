@@ -18,5 +18,6 @@ jobs:
           username: ${{ secrets.HOST_SSH_USER }}
           key: ${{ secrets.HOST_SSH_KEY }}
           rm: true
+          strip_components: 2
           source: dist/public/
           target: ~/deploy/apps/
