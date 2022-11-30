@@ -18,5 +18,5 @@ jobs:
           username: ${{ secrets.HOST_SSH_USER }}
           key: ${{ secrets.HOST_SSH_KEY }}
           rm: true
-          source: .
-          target: ~/deploy
+          source: dist/public/
+          target: ~/deploy/apps/
